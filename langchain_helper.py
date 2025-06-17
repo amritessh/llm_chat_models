@@ -49,6 +49,8 @@ def generate_response(animal_type):
 
     if os.getenv('DEBUG_MODE', 'False').lower() == 'true':
         logging.debug(f"Generated response for {animal_type}: {response}")
+        
+    return response
 
 if __name__ == "__main__":
     generate_response(input("Enter an animal type: "))
